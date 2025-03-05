@@ -1,0 +1,2 @@
+# autonomous robots using the configuration space (c-space)
+ Este repositorio contiene un proyecto en Python que calcula y visualiza el espacio de configuraciones (C-Space) de un robot planar de 3-DOF, generando una grilla de ángulos en el rango de $[-\pi, \pi]$ y detectando colisiones con obstáculos. Además, se implementa el algoritmo A* para planificar trayectorias libres de colisiones y se utiliza matplotlib para animar, de forma suave, el movimiento del robot a lo largo de la ruta planificada.
