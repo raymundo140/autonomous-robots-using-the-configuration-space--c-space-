@@ -1,22 +1,48 @@
-# Autonomous 3-DOF Planar Robot With Configuration Space Computation 
+# Configuration Space Computation for a 3-DOF Planar Robot
 
-This repository contains a Python project that computes and visualizes the configuration space (C-Space) of a 3-degree-of-freedom (3-DOF) planar robot. The project discretizes the joint angles in the range \([- \pi, \pi]\) and detects collisions with obstacles present in the workspace. It then applies the A* algorithm to plan a collision-free path, and interpolates the resulting configurations to achieve a smooth animation of the robot's movement.
+This repository contains two Python programs that demonstrate how to compute and visualize the configuration space (C-Space) of a 3-degree-of-freedom (3-DOF) planar robot, with one or multiple obstacles. Both programs use discretization of joint angles, collision detection, and A* path planning to find a safe trajectory.
 
-## Features
+## Contents
 
-- **C-Space Computation:** Generates a 3D grid representing all possible robot configurations.
-- **Collision Detection:** Evaluates each configuration to determine if any robot link collides with one or more obstacles.
-- **Path Planning with A\*:** Uses the A* algorithm to find a valid, collision-free trajectory between an initial and a target configuration.
-- **Path Interpolation:** Inserts intermediate configurations for a smoother animation.
-- **Visualization and Animation:** Displays the C-Space (3D view) and a 2D simulation of the robot moving along the planned path using matplotlib.
+- **cspace.py**  
+  Computes and visualizes the C-Space for a 3-DOF planar robot with a single obstacle.  
+
+- **cspaceMO.py**  
+  Extends the same approach to handle multiple obstacles in the workspace, providing a more complex scenario.
 
 ## Requirements
+- **Python 3.x**
+- **Matplotlib (for visualization)**
 
-- Python 3.x
-- Matplotlib (install via `pip install matplotlib`)
+   ```bash
+  pip install matplotlib
+   ```
 
+
+## How to Download
+
+1. **Clone the repository (recommended)**  
+   ```bash
+   git clone https://github.com/raymundo140/autonomous-robots-using-the-configuration-space--c-space-.git
+   ```
+
+2. Navigate to the project folder
+   ```bash
+    cd autonomous-robots-using-the-configuration-space--c-space-
+   ```
+   
 ## How to Run
 
-Clone the repository and execute the main script:
-```bash
-python main.py
+1. **Single Obstacle Scenario**
+   ```bash
+    python cspace.py
+   ```
+
+
+2. **Multiple Obstacles Scenario**
+
+   ```bash
+   python cspaceMO.py
+   ```
+
+   
